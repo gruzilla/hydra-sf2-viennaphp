@@ -8,6 +8,7 @@ class AppKernel extends Kernel
     public function registerBundles()
     {
         $bundles = array(
+            // basic bundles
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
@@ -17,8 +18,11 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
-            new ViennaPhp\ViennaPhpBundle\ViennaPhpBundle(),
+            // 3rd party bundles
             new Hydra\HydraBundle\HydraBundle(),
+
+            // own bundles
+            new ViennaPhp\ViennaPhpBundle\ViennaPhpBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

@@ -4,17 +4,15 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-    <!--
     <parameters>
-        <parameter key="vienna_php.example.class">ViennaPhp\ViennaPhpBundle\Example</parameter>
+        <parameter key="vienna_php.requesthelper.class">Hydra\Common\Helper\RequestHelper</parameter>
     </parameters>
 
     <services>
-        <service id="vienna_php.example" class="%vienna_php.example.class%">
-            <argument type="service" id="service_id" />
-            <argument>plain_value</argument>
-            <argument>%parameter_name%</argument>
+        <service id="vienna_php.requesthelper" class="%vienna_php.requesthelper.class%">
+            <argument type="service" id="hydra.service" />
+            <argument type="service" id="hydra.repository_factory" />
         </service>
     </services>
-    -->
+
 </container>
