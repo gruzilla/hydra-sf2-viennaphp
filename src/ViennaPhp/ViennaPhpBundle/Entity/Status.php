@@ -3,21 +3,22 @@
 namespace ViennaPhp\ViennaPhpBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Hydra\Annotation as Hydra;
 
 /**
  * Status
  *
  * @ORM\Table()
  * @ORM\Entity(repositoryClass="ViennaPhp\ViennaPhpBundle\Entity\StatusRepository")
+ * @Hydra\Decoder("ViennaPhp\ViennaPhpBundle\Hydra\Twitter\SearchDecoder")
  */
 class Status
 {
     /**
      * @var integer
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="id", type="string", length=255)
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
 
@@ -32,6 +33,7 @@ class Status
      * @var string
      *
      * @ORM\Column(name="username", type="string", length=255)
+     * @Hydra\Map(source="user.screen_name")
      */
     private $username;
 
@@ -39,6 +41,7 @@ class Status
      * @var \DateTime
      *
      * @ORM\Column(name="created", type="datetime")
+     * @Hydra\Map("created_at")
      */
     private $created;
 
@@ -46,7 +49,7 @@ class Status
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -69,7 +72,7 @@ class Status
     /**
      * Get text
      *
-     * @return string 
+     * @return string
      */
     public function getText()
     {
@@ -92,7 +95,7 @@ class Status
     /**
      * Get username
      *
-     * @return string 
+     * @return string
      */
     public function getUsername()
     {
@@ -115,7 +118,7 @@ class Status
     /**
      * Get created
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getCreated()
     {

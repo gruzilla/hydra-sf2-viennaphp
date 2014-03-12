@@ -35,6 +35,15 @@ class TweetsCommand extends ContainerAwareCommand
         );
 
 
-        die(print_r($result, 1));
+        // persisting
+        $em = $this->getContainer()->get('doctrine')->getEntityManager();
+
+        $output->writeln('<info>Found '.count($result).' tweets:</info>');
+        foreach ($result as $status) {
+            $em->persist($status);
+            $output->writeln($status->getText());
+        }
+
+        $em->flush();
     }
 }
