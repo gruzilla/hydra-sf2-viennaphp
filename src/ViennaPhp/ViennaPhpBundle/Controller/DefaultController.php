@@ -9,11 +9,14 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/{name}")
+     * @Route("/")
      * @Template()
      */
-    public function indexAction($name = 'no name')
+    public function indexAction()
     {
-        return array('name' => $name);
+        $rep = $this->get('doctrine')->getRepository('ViennaPhpBundle:Status');
+        return array(
+            'tweets' => $rep->findAll()
+        );
     }
 }
