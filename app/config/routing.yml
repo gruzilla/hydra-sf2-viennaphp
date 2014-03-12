@@ -1,0 +1,5 @@
+vienna_php:
+    resource: "@ViennaPhpBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
