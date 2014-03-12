@@ -3,3 +3,6 @@ vienna_php:
     type:     annotation
     prefix:   /
 
+hydra:
+    resource: "@HydraBundle/Resources/config/routing.yml"
+    prefix:   /

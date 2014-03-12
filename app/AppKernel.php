@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
             new ViennaPhp\ViennaPhpBundle\ViennaPhpBundle(),
+            new Hydra\HydraBundle\HydraBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
