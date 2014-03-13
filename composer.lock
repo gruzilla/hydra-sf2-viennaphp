@@ -626,16 +626,16 @@
         },
         {
             "name": "gruzilla/hydra",
-            "version": "v0.0.2",
+            "version": "v0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gruzilla/hydra.git",
-                "reference": "7dcaa5d3cf5428e5e4f7d834ae169e43f8858bbe"
+                "reference": "9d2d8309a35bf2f01a929c26c17310fd693640c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gruzilla/hydra/zipball/7dcaa5d3cf5428e5e4f7d834ae169e43f8858bbe",
-                "reference": "7dcaa5d3cf5428e5e4f7d834ae169e43f8858bbe",
+                "url": "https://api.github.com/repos/gruzilla/hydra/zipball/9d2d8309a35bf2f01a929c26c17310fd693640c1",
+                "reference": "9d2d8309a35bf2f01a929c26c17310fd693640c1",
                 "shasum": ""
             },
             "require": {
@@ -680,20 +680,20 @@
                 "aggregation",
                 "social media"
             ],
-            "time": "2014-03-12 19:02:49"
+            "time": "2014-03-12 23:13:21"
         },
         {
             "name": "gruzilla/hydra-bundle",
-            "version": "v0.0.1",
+            "version": "v0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gruzilla/hydra-bundle.git",
-                "reference": "487aec4efa052b6bffd559192d66b47b44a425dd"
+                "reference": "5513ea7e324e734938ffc90213ce032129e2b2e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gruzilla/hydra-bundle/zipball/487aec4efa052b6bffd559192d66b47b44a425dd",
-                "reference": "487aec4efa052b6bffd559192d66b47b44a425dd",
+                "url": "https://api.github.com/repos/gruzilla/hydra-bundle/zipball/5513ea7e324e734938ffc90213ce032129e2b2e4",
+                "reference": "5513ea7e324e734938ffc90213ce032129e2b2e4",
                 "shasum": ""
             },
             "require": {
@@ -728,7 +728,7 @@
                 "aggregation",
                 "social media"
             ],
-            "time": "2014-03-12 20:41:22"
+            "time": "2014-03-12 23:12:41"
         },
         {
             "name": "incenteev/composer-parameter-handler",
